@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+
+    <title>Document</title>
+</head>
+
+
+
+<body>
+    <div class="container-fluid ">
+        <div class="row 10">
+              <nav class="navbar bg-light bd-highlight ">
+                  <div class="container-fluid d-flex ">
+                    <a class="navbar-brand  me-auto p-2 bd-highlight" href="#">
+                      <i class="fa-brands fa-instagram"></i>
+                      Instagram
+                    </a>
+                    
+                      <!-- Button trigger modal -->
+                      <button type="button" class="btn btn-success bd-highlight" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        Create a new post
+                      </button>
+                      
+                      <!-- Modal -->
+                      <div class="modal fade " id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                          <div class="modal-dialog">
+                                            <div class="modal-content">
+                                              <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalLabel">Create a new post</h5>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                              </div>
+                                              <div class="modal-body p-3 ">
+                                                <h6>Caption:</h6>
+                                                <input type="text" class="form-control p-3 text-sm-start" placeholder="Add the caption of your post here" aria-label="Add the caption of your post here" aria-describedby="basic-addon1">
+                                                <p></p>
+                                                <button type="button" class="btn btn-light border "><i class="fa-solid fa-camera"></i></button>
+                                                <button type="button" class="btn btn-light border "><i class="fa-solid fa-location-dot"></i></i></button>
+                                                
+                                              </div>
+                                              <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                                <button type="button" class="btn btn-success">Publish</button>
+                                              </div>
+                                            </div>
+                                          </div>
+                      </div>
+                      <!-- top navbar buttons -->
+                      <div class="btn-group p-3 bd-highlight">
+                      <button type="button" class="btn btn-secondary" >
+                                                <i class="fa-solid fa-gear " i></i>
+                      </button>
+                      <button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+                                              <span class="visually-hidden">Toggle Dropdown</span>
+                      </button>
+                      <ul class="dropdown-menu">
+                                              <li><a class="dropdown-item" href="#">Profile</a></li>
+                                              <li><a class="dropdown-item" href="#">Accesibility</a></li>
+                                              <li><a class="dropdown-item" href="#">Privacy and Data</a></li>
+                                              <li><hr class="dropdown-divider"></li>
+                                              <li><a class="dropdown-item text-danger" href="#">Log <output></output><output></output></a></li>
+                      </ul>
+                     
+                  </div>
+                  </div>
+              </nav>
+        </div>
+
+    
+
+
+      <!-- This is my navtabs with grid and post -->
+      <div class="row 12">
+        <ul class="nav d-flex justify-content-center" id="myTab" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button class="nav-link btn-light"  id="grid" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">
+              <i class="fa-solid fa-border-all" ></i>
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="post" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">
+              <i class="fa-solid fa-square"></i>
+            </button>
+          </li>
+         
+        </ul>
+        <div class="tab-content" id="myTabContent">
+          <div class="tab-pane fade show active " id="home" role="tabpanel" aria-labelledby="home-tab">
+            
+            <!-- Here is the content of my grid -->
+            
+            <div id="grid" class="container-fluid d-flex justify-content-center">
+              <div class="row d-flex justify-content-center ">
+                <div class="col-sm-6 col-md-4 col-lg-3 me-5 mb-2 ">
+                  <img  src="https://picsum.photos/id/237/400/400"></img>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3 me-5 mb-2">
+                  <img src="https://picsum.photos/seed/picsum/400/400"></img>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3 me-5 mb-2">
+                  <img src="https://picsum.photos/400/400?grayscale"></img>
+                </div>
+
+                <div></div> 
+
+                <div class="col-sm-6 col-md-4 col-lg-3 pt-3 me-5 mb-2">
+                  <img  src="https://picsum.photos/id/237/400/400"></img>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3 pt-3 me-5 mb-2">
+                  <img src="https://picsum.photos/seed/picsum/400/400"></img>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3 pt-3 me-5 mb-2">
+                  <img src="https://picsum.photos/400/400?grayscale"></img>
+                </div>
+
+                <div class="mb-4"></div>
+
+                <div class="col-sm-6 col-md-4 col-lg-3 me-5 mb-2">
+                  <img  src="https://picsum.photos/id/237/400/400"></img>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3 me-5 mb-2">
+                  <img src="https://picsum.photos/seed/picsum/400/400"></img>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3 me-5 mb-2">
+                  <img src="https://picsum.photos/400/400?grayscale"></img>
+                </div>
+                <div></div>              
+                <div class="col-sm-6 col-md-4 col-lg-3 pt-3 me-5 mb-2">
+                  <img  src="https://picsum.photos/id/237/400/400"></img>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3 pt-3 me-5 mb-2">
+                  <img src="https://picsum.photos/seed/picsum/400/400"></img>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3 pt-3 me-5 mb-2">
+                  <img src="https://picsum.photos/400/400?grayscale"></img>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade justify-content-center d-flex " id="profile" role="tabpanel" aria-labelledby="profile-tab">
+            
+            <!-- Here starts the content of my post-->
+          
+          <div class="row container-fluid d-flex justify-content-center align-middle -5">
+
+            <div id="post" class="col-7 card data-bs-dismiss d-flex flex-wrap justify-content-center align-middle border-1 w-300 h-300 mb-5" >
+              <div id="header post" class="d-flex justify-content-between p-2 object-fit: contain align-text-middle">
+              <h4>This is a post I made</h4>
+              <p> 8/26 </p>
+            </div>
+
+              <img src="https://picsum.photos/id/237/300/300" class="img-fluid  " style="width:100%; height:auto;" " alt="black dog">
+              <div class="card-body">
+                <h6 float-left>204 likes</h6>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              </div>
+            </div>
+
+            <div id="post" class="col-7 card data-bs-dismiss d-flex flex-wrap justify-content-center align-middle border-1 w-300 h-300 mb-5" >
+              <div id="header post" class="d-flex justify-content-between p-2 object-fit: contain align-text-middle">
+              <h4>This is a post I made</h4>
+              <p> 8/26 </p>
+            </div>
+
+              <img src="https://picsum.photos/seed/picsum/300/300" class="img-fluid  " style="width:100%; height:auto;" " alt="black dog">
+              <div class="card-body">
+                <h6 float-left>204 likes</h6>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              </div>
+            </div>
+
+            <div id="post" class="col-7 card data-bs-dismiss d-flex flex-wrap justify-content-center align-middle border-1 w-300 h-300 mb-5" >
+              <div id="header post" class="d-flex justify-content-between p-2 object-fit: contain align-text-middle">
+              <h4>This is a post I made</h4>
+              <p> 8/26 </p>
+            </div>
+
+              <img src="https://picsum.photos/300/300?grayscale" class="img-fluid  " style="width:100%; height:auto;" " alt="black dog">
+              <div class="card-body">
+                <h6 float-left>204 likes</h6>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              </div>
+            </div>
+
+            <div id="post" class="col-7 card data-bs-dismiss d-flex flex-wrap justify-content-center align-middle border-1 w-300 h-300 " >
+              <div id="header post" class="d-flex justify-content-between p-2 object-fit: contain align-text-middle">
+              <h4>This is a post I made</h4>
+              <p> 8/26 </p>
+            </div>
+
+              <img src="https://picsum.photos/id/237/300/300" class="img-fluid  " style="width:100%; height:auto;" " alt="black dog">
+              <div class="card-body">
+                <h6 float-left>204 likes</h6>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              </div>
+            </div>
+           </div>
+
+            
+
+          
+
+
+
+
+
+
+          
+
+          </div>
+          <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">...</div>
+        </div>
+
+
+      </div>
+
+
+    
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+</body>
+</html>
